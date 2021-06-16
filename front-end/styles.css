@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #e4eef2;
+}
+
+/* begin header stuff */
+header {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 20rem;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  margin-top: 5rem;
+}
+.avatarContainer > img {
+  width: 15rem;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.avatarContainer {
+  padding: 1rem;
+}
+p,
+h1 {
+  text-align: center;
+  color: #327a2d;
+}
+.myProjects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.project {
+  width: 40rem;
+  transition: all 1s ease;
+}
+.project:hover {
+  opacity: 70%;
+}
+.blackText {
+  color: black;
+}
+
+.headline {
+  padding-top: 3rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectActual {
+  padding-bottom: 5rem;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+}
+input {
+  padding: 0.5rem;
+  height: 1rem;
+}
+
+textarea {
+  resize: none;
+  margin: 0.5rem;
+}
+button {
+  width: 5rem;
+  align-self: center;
+  transition: all 1s ease;
+}
+button:hover {
+  background-color: lightblue;
+}
+footer {
+  margin-top: 0.5rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+a:visited {
+  text-decoration: none;
+}
+i {
+  color: #0487d9;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .project {
+    width: 25rem;
+    justify-self: center;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .project {
+    width: 25rem;
+  }
+}
