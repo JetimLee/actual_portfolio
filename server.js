@@ -4,6 +4,7 @@ const app = express();
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 const password = process.env.EMAIL_PASSWORD;
+const my_email = process.env.EMAIL;
 
 const PORT = process.env.PORT || 4000;
 
@@ -25,7 +26,7 @@ app.post("/formData", (req, resp) => {
     port: 465,
     secure: true,
     auth: {
-      user: "gavincoulsonportfolio@gmail.com",
+      user: my_email,
       pass: password,
     },
     tls: { rejectUnauthorized: false },
