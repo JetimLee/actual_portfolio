@@ -5,7 +5,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  background-color: #e4eef2;
+  background-color: #b0bac3;
 }
 
 /* begin header stuff */
@@ -34,10 +34,14 @@ section {
 .avatarContainer {
   padding: 1rem;
 }
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
 p,
 h1 {
   text-align: center;
-  color: #327a2d;
+  color: white;
 }
 .myProjects {
   display: flex;
@@ -69,6 +73,14 @@ section {
   padding-bottom: 5rem;
 }
 
+.codeBtn {
+  width: 8rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border-radius: 10%;
+  background-color: #0455bf;
+}
+
 .formContainer {
   display: flex;
   justify-content: center;
@@ -97,13 +109,29 @@ button {
 }
 button:hover {
   background-color: lightblue;
+  color: white;
+  cursor: pointer;
+}
+#submitBtn {
+  background-color: #284eff;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10%;
+}
+#submitBtn:hover {
+  background-color: lightblue;
 }
 footer {
   margin-top: 0.5rem;
+  padding: 5rem;
+  background-color: #0f67b9;
+  display: flex;
+  justify-content: center;
 }
 ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
 a:visited {
@@ -111,6 +139,16 @@ a:visited {
 }
 i {
   color: #0487d9;
+  transition: all 1s ease;
+  margin-top: 0.5rem;
+}
+i:hover {
+  color: white;
+}
+.socialContainer {
+  background-color: #739cbf;
+  width: 400px;
+  height: 3rem;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .project {

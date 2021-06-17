@@ -47,7 +47,7 @@ app.post("/formData", (req, resp) => {
     if (error) {
       resp.send(error);
     } else {
-      resp.send(`Success`);
+      resp.sendFile(__dirname + "/front-end/Success.html");
     }
   });
   smtpTransport.close();
