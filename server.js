@@ -14,6 +14,10 @@ app.get("/", (req, resp) => {
   resp.sendFile(__dirname + "/front-end/index.html");
 });
 
+app.get("*", function (req, res) {
+  res.status(404).send("sorry, this page doesn't exist!");
+});
+
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
