@@ -30,8 +30,8 @@ app.post("/formData", (req, resp) => {
     port: 465,
     secure: true,
     auth: {
-      user: my_email,
-      pass: password,
+      user: "gavincoulsonportfolio@gmail.com",
+      pass: "jetimlee69!",
     },
     tls: { rejectUnauthorized: false },
   });
