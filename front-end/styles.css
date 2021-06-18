@@ -5,7 +5,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  background-color: #b0bac3;
+  background-color: #d5e7f2;
 }
 
 /* begin header stuff */
@@ -41,7 +41,7 @@ section {
 p,
 h1 {
   text-align: center;
-  color: white;
+  color: #2c87bf;
 }
 .myProjects {
   display: flex;
@@ -96,13 +96,20 @@ form {
   width: 400px;
   -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10%;
 }
 input {
   padding: 0.5rem;
   height: 1rem;
+  border-radius: 10%;
+  border: none;
+  transition: all 1s ease;
 }
 input:focus {
   outline: none;
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10%;
 }
 
 textarea {
@@ -111,15 +118,19 @@ textarea {
 }
 textarea:focus {
   outline: none;
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10%;
 }
 button {
   width: 5rem;
   align-self: center;
   transition: all 1s ease;
+  color: white;
 }
 button:hover {
   background-color: lightblue;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 #submitBtn {
@@ -135,7 +146,7 @@ button:hover {
 footer {
   margin-top: 0.5rem;
   padding: 5rem;
-  background-color: #0f67b9;
+  background-color: #d90479;
   display: flex;
   justify-content: center;
 }
@@ -157,13 +168,13 @@ i:hover {
   color: white;
 }
 .socialContainer {
-  background-color: #739cbf;
   width: 400px;
   height: 3rem;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .project {
-    width: 25rem;
+    width: 23rem;
+    height: auto;
     justify-self: center;
   }
 }
@@ -173,3 +184,36 @@ i:hover {
     width: 25rem;
   }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  * {
+    font-size: 8px;
+  }
+  form {
+    width: 300px;
+    height: 400px;
+  }
+  footer {
+    margin-top: 0.5rem;
+    padding: 5rem;
+    background-color: #d90479;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  * {
+    font-size: 1rem;
+  }
+}
+
+/* @media all and (device-width: 768px) and (device-height: 1024px) {
+  * {
+    font-size: 1.1rem;
+  }
+  form {
+    height: 500px;
+    width: 500px;
+  }
+} */
