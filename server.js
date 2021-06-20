@@ -22,6 +22,8 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
 
+//with heroku you have to pass in the actual email and password
+
 app.post("/formData", (req, resp) => {
   const data = req.body;
 
@@ -30,8 +32,8 @@ app.post("/formData", (req, resp) => {
     port: 465,
     secure: true,
     auth: {
-      user: "gavincoulsonportfolio@gmail.com",
-      pass: "jetimlee69!",
+      user: my_email,
+      pass: password,
     },
     tls: { rejectUnauthorized: false },
   });
