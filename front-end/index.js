@@ -43,3 +43,25 @@ myForm.addEventListener("submit", (e) => {
   // };
   // xhr.send(JSON.stringify(formData));
 });
+
+// const getSkyScanner = async () => {
+//   try {
+//     const response = await fetch(
+//       "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/TLV-sky/JFK-sky/2021-12-01?inboundpartialdate=2021-12-01",
+//       {
+//         method: "GET",
+//         headers: {
+//           "x-rapidapi-key":
+//             "ba4689c2b7msh3e2c25d27cbd448p10bdb4jsn06da0d93a122",
+//           "x-rapidapi-host":
+//             "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
+//         },
+//       }
+//     );
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// getSkyScanner();

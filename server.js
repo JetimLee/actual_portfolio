@@ -19,7 +19,7 @@ app.get("*", function (req, res) {
 });
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 //with heroku you have to pass in the actual email and password

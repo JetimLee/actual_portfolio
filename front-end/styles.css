@@ -5,7 +5,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  background-color: #40e0d0;
+  background-color: white;
 }
 a {
   color: black;
@@ -24,6 +24,7 @@ nav:hover {
 }
 /* begin header stuff */
 header {
+  background: black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -32,7 +33,7 @@ header {
   width: 20rem;
 }
 .fa-home {
-  color: #d90479;
+  color: #00c8dc;
 }
 
 .profileContainer {
@@ -93,35 +94,33 @@ section {
   padding-bottom: 5rem;
 }
 
-.codeBtn {
-  width: 8rem;
-  height: 3rem;
-  margin: 0.5rem;
-  border-radius: 10%;
-  background-color: #0455bf;
-}
-
 .formContainer {
   display: flex;
-  justify-content: center;
-  margin-top: 5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
 }
-
+.headerContainer {
+  padding: 3rem;
+}
 form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 400px;
-  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+
   border-radius: 10%;
+  background-color: white;
+}
+#mailIcon {
+  color: #d9d9d9;
 }
 input {
   padding: 0.5rem;
   height: 1rem;
   border-radius: 10%;
-  border: none;
   transition: all 1s ease;
+  border-color: whitesmoke;
 }
 input:focus {
   outline: none;
@@ -151,9 +150,22 @@ button:hover {
   color: black;
   cursor: pointer;
 }
+.fcc-btn {
+  background-color: #0455bf;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 1s ease;
+  margin: 0.5rem;
+  border-radius: 10%;
+}
+.fcc-btn:hover {
+  color: white;
+}
+
 #submitBtn {
-  background-color: #284eff;
-  width: 8rem;
+  background-color: #0455bf;
+  width: 200px;
   height: 3rem;
   border-radius: 10%;
   margin-bottom: 1rem;
@@ -164,7 +176,7 @@ button:hover {
 footer {
   margin-top: 0.5rem;
   padding: 5rem;
-  background-color: #298f85;
+  background-color: #d9d9d9;
   display: flex;
   justify-content: center;
 }
@@ -178,28 +190,53 @@ a:visited {
   text-decoration: none;
 }
 i {
-  color: #40e0d0;
+  color: black;
   transition: all 1s ease;
   margin-top: 0.5rem;
 }
-i:hover {
-  color: white;
-}
+
 .socialContainer {
   width: 400px;
   height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.social-icon {
+  transition: all 800ms ease;
+}
+.social-icon:hover {
+  color: white;
+}
+
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .project {
-    width: 23rem;
-    height: auto;
+    width: 250px;
     justify-self: center;
+    align-self: center;
+    margin-left: 70px;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    width: 300px;
+  }
+  .myProjects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   .project {
     width: 25rem;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -218,11 +255,19 @@ i:hover {
     display: flex;
     justify-content: center;
   }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   * {
     font-size: 1rem;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
 
