@@ -141,7 +141,6 @@ form {
   flex-direction: column;
   width: 400px;
 
-  border-radius: 10%;
   background-color: white;
 }
 #mailIcon {
@@ -299,7 +298,7 @@ i {
   }
   .project {
     width: 20rem;
-    margin-left: 3rem;
+    margin-left: 3r;
     justify-self: center;
     align-self: center;
   }
