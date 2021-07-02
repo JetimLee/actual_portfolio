@@ -314,6 +314,15 @@ i {
   .project {
     width: 30rem;
   }
+  .skillsGrid {
+    column-gap: 100px;
+    row-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 /* iPhone 6,7,8 PLUS */
@@ -339,14 +348,18 @@ i {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row: auto;
-    border: 3px solid black;
     width: 100%;
     height: fit-content;
     row-gap: 5px;
-    column-gap: 5px;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
   }
   .skillsImage {
     max-width: 9rem;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
   }
 }
 
