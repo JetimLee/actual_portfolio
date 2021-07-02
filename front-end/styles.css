@@ -74,13 +74,31 @@ section {
   align-items: center;
 }
 .skillsGrid {
-  display: flex;
-  grid-template-columns: repeat(3, 200px);
+  column-gap: 100px;
+  row-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  width: 100%;
+  height: fit-content;
+}
+.skillsImage {
+  width: 15rem;
 }
 .avatarContainer > img {
   width: 15rem;
   border: 3px solid black;
   border-radius: 50%;
+}
+h1 {
+}
+.bigHeader {
+  font-size: 3rem;
+  color: black;
+  font-family: "Source Code Pro", monospace;
+}
+.skillsDiv {
+  padding-top: 3em;
 }
 
 .avatarContainer {
@@ -103,6 +121,7 @@ h1 {
 }
 .projectsSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -129,11 +148,8 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.projectsHeadline {
+  padding-top: 5rem;
 }
 
 .projectActual {
@@ -230,7 +246,9 @@ footer {
   background-color: #d9d9d9;
   display: flex;
   justify-content: center;
+  height: 100%;
 }
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -248,10 +266,13 @@ i {
 
 .socialContainer {
   width: 400px;
-  height: 3rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.footerH1 {
+  padding: 1rem;
 }
 .social-icon {
   transition: all 800ms ease;
@@ -259,6 +280,8 @@ i {
 .social-icon:hover {
   color: white;
 }
+
+/* iPhone X */
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .project {
@@ -278,19 +301,22 @@ i {
     justify-content: center;
     flex-direction: column;
   }
-  .portfolioPic {
-    width: 80%;
-  }
+
   * {
     font-size: 8px;
   }
   .projectActual {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .introPic {
-    width: 375px;
+  .project {
+    width: 30rem;
   }
 }
+
+/* iPhone 6,7,8 PLUS */
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   .formContainer {
@@ -309,7 +335,22 @@ i {
     width: 20rem;
     margin-left: 3rem;
   }
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    border: 3px solid black;
+    width: 100%;
+    height: fit-content;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  .skillsImage {
+    max-width: 9rem;
+  }
 }
+
+/* IPAD */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   * {
@@ -333,13 +374,3 @@ i {
     flex-direction: column;
   }
 }
-
-/* @media all and (device-width: 768px) and (device-height: 1024px) {
-  * {
-    font-size: 1.1rem;
-  }
-  form {
-    height: 500px;
-    width: 500px;
-  }
-} */
