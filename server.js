@@ -24,7 +24,7 @@ app.use(cors());
 
 //with heroku you have to pass in the actual email and password
 
-app.post("/formData", (req, resp) => {
+app.post("/formData", (req, resp, next) => {
   const data = req.body;
 
   const smtpTransport = nodemailer.createTransport({
