@@ -288,9 +288,12 @@ i {
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .project {
-    width: 200px;
     justify-self: center;
     align-self: center;
+    width: 35rem;
+  }
+  p {
+    font-size: 1.5rem;
   }
   .portfolioPic {
     display: none;
@@ -320,9 +323,7 @@ i {
     flex-direction: column;
     align-items: center;
   }
-  .project {
-    width: 35rem;
-  }
+
   .skillsGrid {
     column-gap: 100px;
     row-gap: 50px;
@@ -357,7 +358,7 @@ i {
   }
   .project {
     width: 20rem;
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
   }
   .skillsGrid {
     display: grid;
@@ -413,8 +414,7 @@ i {
     width: 300px;
   }
   .project {
-    width: 20rem;
-    margin-left: 1.8rem;
+    width: 24rem;
   }
   .skillsGrid {
     display: flex;
