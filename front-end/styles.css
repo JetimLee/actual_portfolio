@@ -357,7 +357,7 @@ i {
   }
   .project {
     width: 20rem;
-    margin-left: 3rem;
+    margin-left: 0.2rem;
   }
   .skillsGrid {
     display: grid;
