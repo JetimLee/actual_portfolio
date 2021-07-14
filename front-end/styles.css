@@ -180,13 +180,11 @@ input {
   padding: 0.5rem;
   height: 1rem;
   border-radius: 10%;
-  transition: all 1s ease;
   border-color: whitesmoke;
 }
 input:focus {
   outline: none;
-  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  border: 2px solid #00c8dc;
   border-radius: 10%;
 }
 
@@ -195,12 +193,10 @@ textarea {
   margin: 0.5rem;
   border-radius: 10px;
   padding: 5px;
-  transition: all 1s ease;
 }
 textarea:focus {
   outline: none;
-  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+  border: 2px solid #00c8dc;
 }
 button {
   width: 5rem;
