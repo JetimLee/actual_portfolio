@@ -1,10 +1,10 @@
-const profilePicture = document.getElementById("myImg");
-const getProfilePicture = async () => {
-  const response = await fetch("https://api.github.com/users/jetimlee");
-  const data = await response.json();
-  profilePicture.src = data.avatar_url;
-};
-getProfilePicture();
+// const profilePicture = document.getElementById("myImg");
+// const getProfilePicture = async () => {
+//   const response = await fetch("https://api.github.com/users/jetimlee");
+//   const data = await response.json();
+//   profilePicture.src = data.avatar_url;
+// };
+// getProfilePicture();
 
 const submitBtn = document.getElementById("submitBtn");
 
