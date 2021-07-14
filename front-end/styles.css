@@ -5,6 +5,9 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
 }
+body {
+  box-sizing: border-box;
+}
 .portfolioContainer {
   background-image: url("images/sapirs_cool_background_for_me.png");
   width: 100%;
