@@ -1,188 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gavin Coulson Web Development Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6009118e5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gavin Coulson Web Development Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/6009118e5a.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <div class="introPic">
-    <img class="portfolioPic" src="images/new-pic-better-text.png" alt="">
-    <img class="portfolioPic2" src="images/new mobile pic.png">
-  </div>
-
-
-
-
-  <section class="mySkills">
-    <div class="skillsDiv">
-      <h1 class="bigHeader">SKILLS</h1>
-    </div>
-    <div class="skillsGrid">
-      <img class="skillsImage" src="images/node-js-pic.png">
-      <img class="skillsImage" src="images/react-pic.png">
-      <img class="skillsImage" src="images/wordpress-pic.png">
-      <img class="skillsImage" src="images/sql-pic.png">
-      <img class="skillsImage" src="images/html-pic.png">
-      <img class="skillsImage" src="images/javascript-pic.png">
-      <img class="skillsImage" src="images/express-pic.png">
-      <img class="skillsImage" src="images/css-pic.png">
-      <img class="skillsImage" src="images/mongodb-pic.png">
-    </div>
-  </section>
-  <div class="headline projectsHeadline">
-    <h1 class="bigHeader">PROJECTS</h1>
-    <p><strong>
-
-        Click any of the below images to see my live projects<br> or click the
-        button below the picture to see the code on Github!
-      </strong>
-    </p>
-  </div>
-  <section class="projectsSection">
-
-    <div class="myProjects">
-      <div class="projectActual">
-        <a target="_blank" href="http://jsrgev.net/languagedragon/register.html"><img class="project"
-            src="images/languagedragon.png" alt="weather application built in react" /></a>
-        <strong>
-          <p class="blackText">A language learning web application <br>Back-end: NodeJS, Front-end: Vanilla JS, HTML,
-            CSS <br>Deployed to Heroku
-        </strong> </p>
-
-        <div class="buttonContainer">
-          <a class="fcc-btn"
-            href="https://github.com/JetimLee/Language_Application_Hackathon"
-            target="_blank">
-            See code</a>
-        </div>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img class="my-logo" src="images/mylogowhitelettering.png" />
       </div>
-      <div class="projectActual">
-        <a target="_blank" href="https://weather-app-nodejs-react.herokuapp.com/"><img class="project"
-            src="images/weather-app-screenshot.png" alt="weather application built in react" /></a>
-        <p class="blackText"> <strong>A weather web application using the Open-Weather API to get the daily forecast
-            <br>Front-end: ReactJS, CSS <br>Deployed to Heroku
-          </strong></p>
-
-        <div class="buttonContainer">
-          <a class="fcc-btn"
-            href="https://github.com/JetimLee/DI_Bootcamp/tree/main/Week-10-React-And-More/Weather-Application/weather-app"
-            target="_blank">
-            See code</a>
-        </div>
+      <div class="navigation-link-container">
+        <button class="hamburger fas fa-bars" id="hamburger"><i></i></button>
+        <ul id="top-nav-links" class="top-nav-links">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">Contact me</a></li>
+        </ul>
       </div>
-      <div class="projectActual">
-        <a target="_blank" href="https://the-odin-project-mini-message.herokuapp.com/"><img class="project"
-            src="images/message-board.png" alt="weather application built in react" /></a>
-        <p class="blackText"><strong>A simple message board application <br>Back-end: NodeJS, Front-end: Handlebars, CSS
-            <br>Deployed to Heroku</strong>
+    </header>
+    <div class="intro-container">
+      <div class="profile-picture-container">
+        <img class="profile-picture" src="images/my pic (1).jpg" />
+      </div>
+      <div class="intro-text-container">
+        <p class="intro-paragraph">
+          <strong>Hello, my name is Gavin!</strong><br />
+          I am a full-stack developer from Boulder, Colorado.<br />
+          I love microbreweries, kung fu and all things tech.
         </p>
+      </div>
+    </div>
 
-        <div class="buttonContainer">
-          <a class="fcc-btn"
-            href="https://github.com/JetimLee/DI_Bootcamp/tree/main/The-Odin-Project-min-message"
-            target="_blank">
-            See code</a>
-          <!-- Add code link -->
+    <div class="project-header-container">
+      <h1 class="centered-header">My Projects</h1>
+    </div>
+
+    <section class="projects">
+      <div class="project-container">
+        <div class="project-picture-container">
+          <img class="project-picture" src="images/languagedragon.png" />
+        </div>
+        <div class="project-description-container">
+          <p class="about-project">
+            A language learning application that keeps track of a user's
+            vocabulary, the words they have been struggling with and offers
+            interactive quizzes/memory challenges.
+          </p>
+          <p class="centered-paragraph">
+            Frontend: HTML, CSS, Vanilla JS<br />Backend: NodeJS
+          </p>
+        </div>
+        <div class="button-link-container">
+          <a class="fcc-btn" href="#">See live site</a>
+          <a class="fcc-btn" href="#">See code</a>
         </div>
       </div>
+      <div class="project-container">
+        <div class="project-picture-container">
+          <img class="project-picture" src="images/message-board.png" />
+        </div>
+        <div class="project-description-container">
+          <p class="about-project">
+            A basic messaging board application that allows users to communicate
+            with each other on a public forum.
+          </p>
+          <p class="centered-paragraph">
+            Frontend: Handlebars, CSS, Vanilla JS<br />Backend: NodeJS
+          </p>
+        </div>
+        <div class="button-link-container">
+          <a class="fcc-btn" href="#">See live site</a>
+          <a class="fcc-btn" href="#">See code</a>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-picture-container">
+          <img class="project-picture" src="images/photo sharing app.png" />
+        </div>
+        <div class="project-description-container">
+          <p class="about-project">
+            A picture and location sharing application with a login/logout and
+            registration system. Authentication and authorization system
+            utilizes JSON Web Tokens and Bcrypt for password encryption.
+          </p>
+          <p class="centered-paragraph">
+            Frontend: React JS, CSS<br />Backend: NodeJS<br />Deployed backend
+            to Heroku, Front end to Firebase
+          </p>
+        </div>
+        <div class="button-link-container">
+          <a class="fcc-btn" href="#">See live site</a>
+          <a class="fcc-btn" href="#">See code</a>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-picture-container">
+          <img
+            class="project-picture"
+            src="images/weather-app-screenshot.png"
+          />
+        </div>
+        <div class="project-description-container">
+          <p class="about-project">
+            A web application that displays the day's forecast of anywhere in
+            the world. Utilizes the Open Weather API.
+          </p>
+          <p class="centered-paragraph">
+            Frontend: CSS, ReactJS<br />Deployed to Heroku
+          </p>
+        </div>
+        <div class="button-link-container">
+          <a class="fcc-btn" href="#">See live site</a>
+          <a class="fcc-btn" href="#">See code</a>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-picture-container">
+          <img class="project-picture" src="images/ecometrics-screenshot.png" />
+        </div>
+        <div class="project-description-container">
+          <p class="about-project">
+            A mock landing page for an e-commerce website. The form has
+            client-side validation and the page itself is fully responsive up to
+            280px (yes, Galaxy fold works on this website!)
+          </p>
+          <p class="centered-paragraph">
+            Frontend: HTML, CSS, Vanilla JS<br />Deployed to Firebase
+          </p>
+        </div>
+        <div class="button-link-container">
+          <a class="fcc-btn" href="#">See live site</a>
+          <a class="fcc-btn" href="#">See code</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="projectActual">
-        <a target="_blank" href="https://portfolio-gavin-coulson.herokuapp.com/"><img class="project"
-            src="images/my_portfolio_pic.png" alt="weather application built in react" /></a>
-        <p class="blackText"><strong>This very website! <br>Back-end: NodeJS, Front-end: Vanilla JS, HTML, CSS
-            <br>Deployed to Heroku</strong>
+    <div class>
+      <div class="headerContainer">
+        <h1 class="bigHeader">Have some questions?</h1>
+        <p class="info-paragraph">
+          <strong
+            >For more information, please out the form below and I will be in
+            touch!</strong
+          >
         </p>
+      </div>
 
-        <div class="buttonContainer">
-          <a class="fcc-btn"
-            href="https://github.com/JetimLee/actual_portfolio"
-            target="_blank">
-            See code</a>
-          <!-- Add code link -->
+      <div class="formContainer">
+        <div>
+          <i id="mailIcon" class="fas fa-envelope-open-text fa-10x"></i>
         </div>
+        <form id="myForm" method="POST" action="/formData">
+          <label for="name">Name: </label>
+          <input id="name" type="text" name="name" required />
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="email" required />
+          <label for="phonenumber">Phone Number: </label>
+          <input id="phonenumber" type="tel" name="phonenumber" required />
+          <textarea
+            placeholder="leave a message..."
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button id="submitBtn" type="submit" value="send message">
+            Submit
+          </button>
+        </form>
       </div>
-      <div class="projectActual">
-        <a target="_blank" href="https://my-final-project-c614c.web.app/auth"><img class="project"
-            src="images/photo sharing app.png" alt="weather application built in react" /></a>
-        <p class="blackText"><strong>
-            A photo storing app with geolocation provided by Google Maps API <br>Back-end: NodeJS,
-            MongoDB Atlas, Frontend: ReactJS, CSS <br>Deployed back-end to Heroku and front-end to Google Firebase
-          </strong>
-        </p>
-
-        <div class="buttonContainer">
-          <a class="fcc-btn"
-            href="https://github.com/JetimLee/Final_Project_Photo_App"
-            target="_blank">
-            See code</a>
-          <!-- Add code link -->
+    </div>
+    <footer>
+      <div class="socialContainer">
+        <div class="footerH1">
+          <h1 class="centered-header">FOLLOW ME!</h1>
         </div>
+        <ul class="social-media-links">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/gavin-coulson-0bb4a91a2/"
+              ><i class="fab fa-linkedin-in fa-2x social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/JetimLee"
+              ><i class="fab fa-github fa-2x social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://coulsonweb0.medium.com/"
+              ><i class="fab fa-medium fa-2x social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/CoulsonWeb"
+              ><i class="fab fa-twitter fa-2x social-icon"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-  </section>
-  <div class=>
-    <div class="headerContainer">
-      <h1 class="bigHeader">Have some questions?</h1>
-      <p><strong>For more information, please out the form below and I will be in touch!</strong></p>
-    </div>
-
-    <div class="formContainer">
-      <div>
-        <i id="mailIcon" class="fas fa-envelope-open-text fa-10x"></i>
-      </div>
-      <form id="myForm" method="POST" action="/formData">
-        <label for="name">Name: </label>
-        <input id="name" type="text" name="name" required />
-        <label for="email">Email: </label>
-        <input id="email" type="email" name="email" required />
-        <label for="phonenumber">Phone Number: </label>
-        <input id="phonenumber" type="tel" name="phonenumber" required />
-        <textarea placeholder="leave a message..." name="message" id="message" cols="30" rows="10"></textarea>
-        <button id="submitBtn" type="submit" value="send message">
-          Submit
-        </button>
-      </form>
-    </div>
-  </div>
-  <footer>
-
-    <div class="socialContainer">
-      <div class="footerH1">
-        <h1 class="h1Footer">FOLLOW ME!</h1>
-      </div>
-      <ul>
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/in/gavin-coulson-0bb4a91a2/"><i
-              class="fab fa-linkedin-in fa-2x social-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://github.com/JetimLee"><i class="fab fa-github fa-2x social-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://coulsonweb0.medium.com/"><i class="fab fa-medium fa-2x social-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://twitter.com/CoulsonWeb"><i class="fab fa-twitter fa-2x social-icon"></i>
-
-
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </footer>
-  <script src="index.js"></script>
-</body>
-
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -7,35 +7,64 @@
 }
 body {
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
-.portfolioContainer {
-  background-image: url("images/sapirs_cool_background_for_me.png");
-  width: 100%;
-  height: 500px;
-}
-.introPic {
+
+/*top header stuff */
+.navigation-link-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-.portfolioPic {
+.nav-link {
+  color: white;
+  transition: all 1s ease;
+}
+.nav-link:hover {
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+}
+.logo-container {
+  width: 50%;
+}
+.my-logo {
   width: 100%;
+  height: 200px;
+}
+.hamburger {
+  display: none !important;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+.profile-picture-container {
+  width: 100%;
+}
+.profile-picture {
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+.intro-container {
+  border: 3px solid pink;
+  height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-.profileBit {
-  position: absolute;
-  top: 100px;
-  right: 200px;
+.intro-paragraph {
+  text-align: center;
+  line-height: 1.7;
 }
-.textContainer {
-  margin-left: 500px;
+.intro-text-container {
+  width: 100%;
+  border: 5px solid red;
 }
-body {
-  background-color: white;
-}
+
 a {
   color: black;
   text-decoration: none;
@@ -53,6 +82,21 @@ nav:hover {
 }
 /* begin header stuff */
 header {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+.top-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-nav-links li {
+  margin: 0 5px;
+}
+.success-header {
   background: black;
   display: flex;
   justify-content: space-evenly;
@@ -65,99 +109,70 @@ header {
   color: #00c8dc;
 }
 
-.profileContainer {
+/* begin projects stuff */
+.projects {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skillsGrid {
-  column-gap: 100px;
-  row-gap: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row: auto;
-  width: 100%;
-  height: fit-content;
-}
-.skillsImage {
-  width: 15rem;
-}
-.avatarContainer > img {
-  width: 15rem;
-  border: 3px solid black;
-  border-radius: 50%;
-}
-h1 {
-}
-.bigHeader {
-  font-size: 3rem;
-  color: black;
-  font-family: "Source Code Pro", monospace;
-}
-.skillsDiv {
-  padding-top: 3em;
-}
-
-.avatarContainer {
-  padding: 1rem;
-}
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-}
-p,
-h1 {
+.centered-header {
   text-align: center;
-  color: #2c87bf;
 }
-.myProjects {
+.project-header-container {
+  border: 3px solid red;
+  padding: 10px 0;
+}
+.project-container {
+  width: 30%;
+  margin: 10px 5px;
+  padding: 0 10px;
+  background-color: #63bbf2;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-}
-.projectsSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.mySkills {
-  display: grid;
   justify-content: center;
   align-items: center;
 }
-.project {
-  width: 40rem;
-  transition: all 1s ease;
-  -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.8);
+.centered-paragraph {
+  text-align: center;
 }
-.project:hover {
-  opacity: 70%;
+.project-description-container {
+  height: 200px;
+  border: 3px solid red;
 }
-.blackText {
+.project-picture-container {
+  margin: 10px 3px;
+  height: 100px;
+  overflow: hidden;
+}
+.project-picture {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.about-project {
+  text-align: center;
+  line-height: 1.7;
+}
+
+.project-link {
+  background-color: #d9d9d9;
   color: black;
+  padding: 10px;
+  margin: 0 2px;
+  border-radius: 10%;
 }
-
-.headline {
-  padding-top: 3rem;
+.button-link-container {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-}
-.projectsHeadline {
-  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border: 3px solid red;
 }
 
-.projectActual {
-  padding-bottom: 5rem;
-}
+/*form stuff */
 
 .formContainer {
   display: flex;
@@ -166,6 +181,13 @@ h1 {
   margin-bottom: 5rem;
   height: max-content;
 }
+
+.bigHeader {
+  text-align: center;
+}
+.info-paragraph {
+  text-align: center;
+}
 .headerContainer {
   padding: 3rem;
 }
@@ -173,7 +195,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  padding: 20px;
 
   background-color: white;
 }
@@ -206,7 +228,6 @@ button {
   width: 5rem;
   align-self: center;
   transition: all 1s ease;
-  color: white;
 }
 button:hover {
   background-color: lightblue;
@@ -216,7 +237,7 @@ button:hover {
 .fcc-btn {
   background-color: #d9d9d9;
   color: black;
-  padding: 15px 25px;
+  padding: 3px 3px;
   text-decoration: none;
   transition: all 1s ease;
   margin: 0.5rem;
@@ -248,8 +269,7 @@ footer {
   justify-content: center;
   height: 100%;
 }
-
-ul {
+.social-media-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -257,11 +277,6 @@ ul {
 }
 a:visited {
   text-decoration: none;
-}
-i {
-  color: black;
-  transition: all 1s ease;
-  margin-top: 0.5rem;
 }
 
 .socialContainer {
@@ -280,191 +295,62 @@ i {
 .social-icon:hover {
   color: white;
 }
-.portfolioPic2 {
-  display: none;
-}
 
-/* iPhone X */
+/* begin media for mobile */
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .project {
-    justify-self: center;
-    align-self: center;
-    width: 35rem;
+@media screen and (max-width: 767px) {
+  .top-nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .top-nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block !important;
+  }
+  .formContainer {
+    flex-direction: column;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 12px;
   }
-  .portfolioPic {
-    display: none;
-  }
-  .portfolioPic2 {
-    display: block;
-  }
-  .formContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  form {
-    width: 350px;
-  }
-  .myProjects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  * {
-    font-size: 8px;
-  }
-  .projectActual {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skillsGrid {
-    column-gap: 100px;
-    row-gap: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row: auto;
-    width: 100%;
-    height: fit-content;
-  }
-}
-
-/* iPhone 6,7,8 PLUS */
-
-@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-  .formContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .portfolioPic {
-    display: none;
-  }
-  .portfolioPic2 {
-    display: block;
-  }
-  .projectActual {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-    align-self: center;
-  }
-  .project {
-    width: 20rem;
-    margin-left: 0.3rem;
-  }
-  .skillsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row: auto;
-    width: 100%;
-    height: fit-content;
-    row-gap: 5px;
-    column-gap: 10px;
-    align-items: center;
-    justify-items: center;
-  }
-  .skillsImage {
-    max-width: 9rem;
-    align-self: center;
-    justify-self: center;
-    padding: 1rem;
-  }
-}
-
-/* IPAD */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  * {
-    font-size: 8px;
-    overflow-x: none;
-  }
-
-  form {
-    width: 300px;
-    height: 400px;
-  }
-  footer {
-    margin-top: 0.5rem;
-    padding: 5rem;
+  .fcc-btn {
     background-color: #d9d9d9;
+    color: black;
+    padding: 3px 3px;
+    text-decoration: none;
+    transition: all 1s ease;
+    margin: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid black;
+  }
+  .project-container {
+    width: 30%;
+    margin: 10px 5px;
+    padding: 0 35px;
+    background-color: #63bbf2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-  }
-  .formContainer {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
   }
 }
 
-/*iPhone6/7/8*/
-@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-  .formContainer {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 455px) {
+  .fcc-btn {
+    background-color: #d9d9d9;
+    color: black;
+    padding: 0 3px;
+    text-decoration: none;
+    transition: all 1s ease;
+    margin: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid black;
   }
-  form {
-    width: 300px;
-  }
-  .project {
-    width: 24rem;
-  }
-  .skillsGrid {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: fit-content;
-
-    align-items: center;
-    justify-items: center;
-  }
-  .skillsImage {
-    max-width: 9rem;
-    align-self: center;
-    justify-self: center;
-  }
-  .portfolioPic {
-    display: none;
-  }
-  .portfolioPic2 {
-    display: block;
-  }
-}
-
-/* pixel2 */
-
-@media only screen and (min-width: 411px) and (max-width: 731px) {
-  .formContainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .project {
-    width: 25.5rem;
-    justify-self: center;
-    align-self: center;
-  }
-  .portfolioPic {
-    display: none;
-  }
-  .portfolioPic2 {
-    display: block;
-  }
-  .skillsGrid {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: fit-content;
-
-    align-items: center;
-    justify-items: center;
+  .hamburger {
+    display: block !important;
+    font-size: 36px;
   }
 }

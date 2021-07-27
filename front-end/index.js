@@ -1,13 +1,9 @@
-// const profilePicture = document.getElementById("myImg");
-// const getProfilePicture = async () => {
-//   const response = await fetch("https://api.github.com/users/jetimlee");
-//   const data = await response.json();
-//   profilePicture.src = data.avatar_url;
-// };
-// getProfilePicture();
-
 const submitBtn = document.getElementById("submitBtn");
-
+const hamburger = document.getElementById("hamburger");
+const navUL = document.getElementById("top-nav-links");
+hamburger.addEventListener("click", () => {
+  navUL.classList.toggle("show");
+});
 submitBtn.addEventListener("click", (e) => {
   console.log("clicked");
 });
